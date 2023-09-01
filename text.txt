@@ -1,0 +1,5 @@
+DB_HOST=176.58.119.63
+DB_PORT=3306
+DB_USER=huludeig_apple
+DB_PASSWORD=OpenAi@2023
+DB_NAME=huludeig_evangadi
