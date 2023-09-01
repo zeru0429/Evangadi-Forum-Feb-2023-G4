@@ -16,7 +16,7 @@ const answersService = {
     },
     
     newAnswers: (data, callback) => { 
-        connection.query(`INSERT INTO ANSWER (answer, user_id, question_id,answered_date) values (?,?,?,now());`,
+        connection.query(`INSERT INTO answer (answer, user_id, question_id,answered_date) values (?,?,?,now());`,
             [    data.answer,
                  data.user_id,
                 data.question_id

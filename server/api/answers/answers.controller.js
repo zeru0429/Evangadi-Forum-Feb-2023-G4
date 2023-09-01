@@ -31,10 +31,10 @@ const answersController = {
                 console.log(err);
                 return res
                     .status(500)
-                    .json({ msg: "database connection error" })
+                    .json({ msg: "database connection error 9999" })
             }
             if (!results) {
-                return res.status(400).json({ msg: "Record not found" });
+                return res.status(400).json({ msg: "Record not found 888" });
             }
             return res.status(200).json({ data: results, msg:'Your answer has been successfully added.' });
         })

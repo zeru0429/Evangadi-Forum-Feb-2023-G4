@@ -5,7 +5,7 @@ import './questionDetail.css'
 import AnswerQuestion from '../../components/AnswerQuestion/AnswerQuestion';
 import Answer from '../../components/answers/Answers';
 import { useStateValue } from "../../utility/stateprovider";
-
+import moment from 'moment';
 
 const SingleQuestion = () => {
   let params = useParams();
@@ -56,7 +56,7 @@ const SingleQuestion = () => {
       <h4>{question?.question}</h4>
        <h5>{question?.category}</h5>
       <h5>{question?.question_descrih5tion}</h5>
-      <h6>{question?.inserted_datetime}</h6>
+      <p>{moment(question?.inserted_datetime).format("HH:mm:ss MM/DD/YYYY")}</p>
       <hr />
       <hr />
       <div>{answers.length > 0 && <h3>Answer From The Community</h3>}</div>
